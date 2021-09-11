@@ -1,0 +1,42 @@
+div.child{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+
+}
+div.child:hover{
+    background-color: blue;
+}
+input:focus{
+    background-color: orange !important;
+}
+div::selection{
+    background-color: aqua;
+}
+li{
+    list-style: none;
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+/* li::before {
+    content: "before the item";
+    color: cornflowerblue;
+    font-size: 2rem;
+}
+li::after{
+    content: "after the item";
+    color:cornflowerblue;
+    font-size: 2rem;
+} */
+li::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: cyan;
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    left: -30px;
+}
