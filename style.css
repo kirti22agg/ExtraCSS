@@ -8,20 +8,47 @@ div.container{
     align-items: center;
     justify-content: center;
     height: 50vh;
-    /* background-color: black; */
+    background-color: black;
 }
 div.container div.ball{
     width: 100px;
     height: 100px;
     background-color: blueviolet;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.79,-0.5, 1, 2.05);
-
+    
 
 }
-div.container:hover div.ball{
-    /* transform: scale(2); */
-    /* transform: translateX(400px); */
-    cursor: pointer;
-    background-color: cyan;
+ div.ball{
+    margin: 10px;
+  animation-duration: 2s;
+  animation-name: stylish-rotate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+@keyframes stylish-rotate {
+    0% {
+        background: violet;
+    }
+    16%{
+        background: indigo;
+    }
+    32%{
+        background: blue;
+    }
+    48%{
+        background: lightgreen;
+    }
+    64%{
+        background: yellow;
+    }
+    80%{
+        background: orange;
+    }
+    96%{
+        background: red;
+        transform: rotate(360deg);
+        border-radius: 10px;
+    }
+
+
 }
